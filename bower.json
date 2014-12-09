@@ -1,0 +1,25 @@
+{
+  "name": "AppLog",
+  "version": "0.0.0",
+  "authors": [
+    "Everton Inocencio <hewerthomn@gmail.com>"
+  ],
+  "description": "Log your application messages.",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "AppLog/Vendor/Packages",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0"
+  }
+}

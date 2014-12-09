@@ -386,7 +386,6 @@
     <Content Include="Assets\Packages\font-awesome\scss\_spinning.scss" />
     <Content Include="Assets\Packages\font-awesome\scss\_stacked.scss" />
     <Content Include="Assets\Packages\font-awesome\scss\_variables.scss" />
-    <None Include="README.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
