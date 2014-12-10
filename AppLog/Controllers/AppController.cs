@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace AppLog.Controllers
 {
-    public class HomeController : Controller
+    public class AppController : Controller
     {
         public ActionResult Index()
         {
@@ -14,6 +14,11 @@ namespace AppLog.Controllers
         }
 
         public ActionResult About()
+        {
+            return View();
+        }
+
+        public ActionResult Settings()
         {
             return View();
         }

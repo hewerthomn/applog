@@ -10,13 +10,13 @@ using AppLog.Controllers;
 namespace AppLog.Tests.Controllers
 {
     [TestClass]
-    public class HomeControllerTest
+    public class AppControllerTest
     {
         [TestMethod]
         public void Index()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            AppController controller = new AppController();
 
             // Act
             ViewResult result = controller.Index() as ViewResult;
@@ -29,7 +29,7 @@ namespace AppLog.Tests.Controllers
         public void About()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            AppController controller = new AppController();
 
             // Act
             ViewResult result = controller.About() as ViewResult;
