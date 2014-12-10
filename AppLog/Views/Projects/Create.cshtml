@@ -1,0 +1,43 @@
+﻿@model AppLog.Models.Project
+@{
+    ViewBag.Title = "Create Project";
+}
+
+<h1><i class="fa fa-plus text-success"></i> @ViewBag.Title</h1>
+<hr />
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                @Html.Label("Name")
+                @Html.TextBox("Name", null, new { autofocus = "", @class = "form-control", placeholder = "Write the project's name" })
+            </div>            
+        </div>
+
+        <div class="col-md-4">
+            <div class="form-group">
+                @Html.Label("URL") <span class="text-muted">(Optional)</span>
+                @Html.TextBox("URL", null, new { autofocus = "", @class = "form-control", placeholder = "http://example.com"  })
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                @Html.Label("About") <span class="text-muted">(Optional)</span>
+                @Html.TextArea("About", new { @class = "form-control", rows = 5,  placeholder = "Write about the project" })
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="">
+        <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> CREATE</button>
+        <button type="button" class="btn btn-link btn-back pull-right">BACK</button>
+    </div>
+}
