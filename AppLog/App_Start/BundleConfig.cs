@@ -16,7 +16,7 @@ namespace AppLog
 
             bundles.Add(new StyleBundle("~/Assets/Styles/css").Include(
                 "~/Assets/Vendor/bootstrap/dist/css/bootstrap.css",
-                "~/Assets/Vendor/font-awesome/dist/font-awesome.css",
+                "~/Assets/Vendor/font-awesome/css/font-awesome.css",
                 "~/Assets/Styles/styles.css"
             ));            
         }
