@@ -18,7 +18,9 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                @Html.ActionLink("AppLog", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a href="@Url.Action("Index", "Home")" class="navbar-brand">
+                    <img src="~/Assets/Images/navbar-brand.png" alt="AppLog" />
+                </a>                
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
