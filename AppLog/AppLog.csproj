@@ -124,12 +124,14 @@
     </Compile>
     <Compile Include="Helpers\ValidatorHelper.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AppSettings.cs" />
     <Compile Include="Models\DatabaseContext.cs" />
     <Compile Include="Models\Auth.cs" />
     <Compile Include="Models\Message.cs" />
     <Compile Include="Models\MessageType.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\ProjectUser.cs" />
+    <Compile Include="Models\Repository\AppSettingsRepository.cs" />
     <Compile Include="Models\Repository\ProjectRepository.cs" />
     <Compile Include="Models\Repository\Repository.cs" />
     <Compile Include="Models\User.cs" />
@@ -416,6 +418,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_AlertMessage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
