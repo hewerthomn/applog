@@ -11,6 +11,7 @@ namespace AppLog.Models
         [Key]
         public int Id { get; set; }
 
+
         public String Name { get; set; }
         
         public String Tag { get; set; }

@@ -12,6 +12,11 @@ namespace AppLog.Models
         [Key]
         public int Id { get; set; }
 
+        public int MessageTypeId { get; set; }
+        
+        public int ProjectId { get; set; }
+
+
         public String Title { get; set; }
         
         public String Text { get; set; }
@@ -23,11 +28,7 @@ namespace AppLog.Models
         public DateTime CreatedAt { get; set; }
         
         public DateTime? ReadAt { get; set; }
-
-        public int MessageTypeId { get; set; }
         
-        public int ProjectId { get; set; }
-
 
         [ForeignKey("MessageTypeId")]
         public virtual MessageType MessageType { get; set; }

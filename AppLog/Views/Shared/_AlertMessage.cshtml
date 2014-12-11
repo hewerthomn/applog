@@ -1,0 +1,10 @@
+﻿@{
+    TempData["AlertClass"] = (TempData["AlertClass"] == null) ? "success" : TempData["AlertClass"];
+}
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-@TempData["AlertClass"]">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        @Html.Raw(TempData["AlertIcon"]) @Html.Raw(TempData["AlertMessage"])
+    </div>
+}

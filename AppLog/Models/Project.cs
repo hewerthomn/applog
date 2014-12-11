@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AppLog.Models
 {
     public class Project
     {
-        [Key]
         public int Id { get; set; }
 
+        public int OwnerId { get; set; }
+
+        
         public String Name { get; set; }
 
         public String About { get; set; }
@@ -22,5 +21,15 @@ namespace AppLog.Models
         public DateTime CreatedAt { get; set; }
         
         public DateTime? UpdatedAt { get; set; }
+
+
+        [ForeignKey("OwnerId")]
+        public virtual User Owner { get; set; }
+
+        public static string GenerateApiKey()
+        {
+            String Key = Guid.NewGuid().ToString("N").ToUpper();
+            return Key;
+        }
     }
 }
