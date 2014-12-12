@@ -7,6 +7,7 @@ namespace AppLog.Models.Repository
 {
     public class AppSettingsRepository : Repository
     {
+
         private static object GetKey(string key, object defaultValue)
         {
             AppSettings appSettings = db.AppSettings.FirstOrDefault(x => x.Key.Equals(key, StringComparison.InvariantCultureIgnoreCase));
@@ -36,5 +37,20 @@ namespace AppLog.Models.Repository
 
             return value.ToString();
         }
+
+        public static int GetInt(string key, int defaultValue)
+        {
+            object value = GetKey(key, defaultValue);
+
+            return Convert.ToInt32(value);
+        }
+
+        public static decimal GetDecimal(string key, decimal defaultValue)
+        {
+            object value = GetKey(key, defaultValue);
+
+            return Convert.ToDecimal(value);
+        }
+
     }
 }
