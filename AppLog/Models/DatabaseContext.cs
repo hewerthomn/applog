@@ -19,6 +19,8 @@ namespace AppLog.Models
 
         public DbSet<User> User { get; set; }
 
+        public DbSet<AppSettings> AppSettings { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -53,7 +53,7 @@ namespace AppLog.Migrations
 
 
             });
-
+            
             context.SaveChanges();
         }
     }
